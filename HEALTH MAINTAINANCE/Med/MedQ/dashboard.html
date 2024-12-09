@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: #42636A;">
+
+    <nav>
+        <a href="index.html">
+          <div class="logo">MedQ</div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="department.html">Departments</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="diagnosis.html">Disease Predictor </a></li>
+          <li><a href="medical history.html">Medical History</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+
+    <!-- Upcoming Appointments Section -->
+    <section id="upcoming-appointments" class="appointment-section">
+        <h2>Upcoming Appointments</h2>
+        <ul id="dataList"></ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 MedQ. All rights reserved.</p>
+    </footer>
+
+    <!-- Use an earlier version that does not use modules -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
